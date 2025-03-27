@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdBlocker Based AI</title>
+    <meta name="description" content="AdBlocker Based AI">
+    <meta name="author" content="GALIH RIDHO UTOMO">
+    <meta name="theme-color" content="#1e1e1e">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+            <i class="fas fa-shield-alt"></i>
+            <span>AdBlock Analytics</span>
+        </div>
+        <div class="controls">
+            <a href="https://github.com/4211421036/aiadblocker" target="_blank" rel="noopener" class="github-link"
+                title="View on GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="theme-toggle" title="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="statsContainer" class="stats-container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Domain</div>
+                <div class="stat-value loading"></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Potential Ads</div>
+                <div class="stat-value loading"></div>
+            </div>
+            <div class="stat-card highlight">
+                <div class="stat-label">Ads Blocked</div>
+                <div class="stat-value loading"></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Block Accuracy</div>
+                <div class="stat-value loading"></div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+        <div class="last-updated">Loading data...</div>
+    </div>
+
+    <div class="footer">
+        AdBlocker Based AI created GALIH RIDHO UTOMO· <span id="currentYear"></span>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+/* Teknik cloaking dari penelitian UIUC 2023 */
+.adblock-modal,
+.ads-disabled,
+[class*="adblock"],
+[id*="adblock"],
+.ad-placeholder,
+.adblock-overlay,
+.adblock-detector,
+.adblock-notice {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+    pointer-events: none !important;
+    z-index: -9999 !important;
+}
+
+/* Counter measure untuk overlay */
+body:has(.adblock-modal) {
+    overflow: auto !important;
+    position: static !important;
+}
+
+body:has(.adblock-overlay)> :not(.adblock-overlay) {
+    filter: none !important;
+    pointer-events: auto !important;
+    user-select: auto !important;
+}
