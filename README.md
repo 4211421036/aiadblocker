@@ -1,6 +1,9 @@
 # AI-Powered Advanced Ad-Blocking System
 *A Comprehensive Technical Documentation*
 
+### Preview Extensions
+<img src="Screenshot 2025-03-27 130006.png" alt="banner">
+
 ## Table of Contents
 1. [Architecture Overview](#1-architecture-overview)
 2. [Core Technical Components](#2-core-technical-components)  
